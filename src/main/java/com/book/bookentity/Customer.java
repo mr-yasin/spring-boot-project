@@ -12,13 +12,13 @@ public class Customer {
     private int id;
 
 
-    @Column(name = "name", columnDefinition = "VARCHAR(255)")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "phone", columnDefinition = "VARCHAR(15)")
+    @Column(name = "phone")
     private String phone;
 
-    @Column(name = "registered", columnDefinition = "DATETIME")
+    @Column(name = "registered")
     private String registered;
 
     // getters and setters

@@ -10,13 +10,13 @@ public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", columnDefinition = "int")
+    @Column(name = "id")
     private int id;
 
-    @Column(name = "book_name", columnDefinition = "VARCHAR(255)")
+    @Column(name = "book_name")
     private String bookName;
 
-    @Column(name = "author", columnDefinition = "VARCHAR(255)")
+    @Column(name = "author")
     private String author;
 
     // getters and setters

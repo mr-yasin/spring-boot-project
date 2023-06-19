@@ -8,21 +8,21 @@ import org.antlr.v4.runtime.misc.NotNull;
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", columnDefinition = "int")
+    @Column(name = "id")
     private int id;
 
 
-    @Column(name = "book_id", columnDefinition = "int")
+    @Column(name = "book_id")
     private int bookId;
 
 
-    @Column(name = "customer_id", columnDefinition = "int")
+    @Column(name = "customer_id")
     private int customerId;
 
-    @Column(name = "issue_date", columnDefinition = "DATETIME")
+    @Column(name = "issue_date")
     private String issueDate;
 
-    @Column(name = "return_date", columnDefinition = "DATETIME")
+    @Column(name = "return_date")
     private String returnDate;
 
     // getters and setters

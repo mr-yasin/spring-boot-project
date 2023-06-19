@@ -14,8 +14,8 @@ public interface BookingRepository extends JpaRepository<Booking, Integer> {
 
     @Query(value = "SELECT * FROM bookings bs WHERE " +
             "EXISTS (SELECT 1 FROM customer c WHERE bs.customer_id = c.id AND c.phone = :phone) " +
-            "AND EXISTS (SELECT 1 FROM books b WHERE b.id = bs.book_id AND b.author IN :authors)",
-            nativeQuery = true)
+            "AND EXISTS (SELECT 1 FROM books b WHERE b.id = bs.book_id AND b.author IN :authors)"
+            )
     List<Booking> queryBy(@Param("phone") String phone,
                           @Param("authors") List<String> authors);
 }
